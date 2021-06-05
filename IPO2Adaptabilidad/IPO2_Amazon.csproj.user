@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>C:\Users\User\Desktop\UNIVERSIDAD\OneDrive - Universidad de Castilla-La Mancha\2ºCuatri\IPO2\Lab\P2\IPO2Adaptabilidad\IPO2Adaptabilidad\logo.png</Source>
+    <SmallTileSource>C:\Users\User\Desktop\UNIVERSIDAD\OneDrive - Universidad de Castilla-La Mancha\2ºCuatri\IPO2\Lab\P2\IPO2Adaptabilidad\IPO2Adaptabilidad\logo.png</SmallTileSource>
+    <MediumTileSource>C:\Users\User\Desktop\UNIVERSIDAD\OneDrive - Universidad de Castilla-La Mancha\2ºCuatri\IPO2\Lab\P2\IPO2Adaptabilidad\IPO2Adaptabilidad\logo.png</MediumTileSource>
+    <WideTileSource>C:\Users\User\Desktop\UNIVERSIDAD\OneDrive - Universidad de Castilla-La Mancha\2ºCuatri\IPO2\Lab\P2\IPO2Adaptabilidad\IPO2Adaptabilidad\logo.png</WideTileSource>
+    <LargeTileSource>C:\Users\User\Desktop\UNIVERSIDAD\OneDrive - Universidad de Castilla-La Mancha\2ºCuatri\IPO2\Lab\P2\IPO2Adaptabilidad\IPO2Adaptabilidad\logo.png</LargeTileSource>
+    <AppIconSource>C:\Users\User\Desktop\UNIVERSIDAD\OneDrive - Universidad de Castilla-La Mancha\2ºCuatri\IPO2\Lab\P2\IPO2Adaptabilidad\IPO2Adaptabilidad\logo.png</AppIconSource>
+    <SplashScreenSource>C:\Users\User\Desktop\UNIVERSIDAD\OneDrive - Universidad de Castilla-La Mancha\2ºCuatri\IPO2\Lab\P2\IPO2Adaptabilidad\IPO2Adaptabilidad\logo.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\User\Desktop\UNIVERSIDAD\OneDrive - Universidad de Castilla-La Mancha\2ºCuatri\IPO2\Lab\P2\IPO2Adaptabilidad\IPO2Adaptabilidad\logo.png</PackageLogoSource>
+  </PropertyGroup>
+</Project>
