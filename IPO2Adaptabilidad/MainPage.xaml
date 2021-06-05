@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="IPO2_Amazon.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IPO2_Amazon"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="DarkCyan">
+            <Button Margin="4" Click="Button_Click">
+                <FontIcon Foreground="White" Glyph="&#xE700;" FontFamily="Segoe MDL2 Assets"></FontIcon>
+            </Button>
+        </Border>
+        <SplitView x:Name="svMenu" Grid.Row="1" IsPaneOpen="True" PaneBackground="Aqua" DisplayMode="CompactInline" CompactPaneLength="30">
+            <SplitView.Pane>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <SymbolIcon x:Name="siCatalogo" Grid.Row="0" Margin="4" Symbol="Library" HorizontalAlignment="Left" PointerPressed="irCatalogo"></SymbolIcon>
+                    <SymbolIcon x:Name="siCesta" Grid.Row="1" Margin="4" Symbol="Shop" HorizontalAlignment="Left" PointerPressed="irCesta"></SymbolIcon>
+                    <SymbolIcon x:Name="siFavorito" Grid.Row="2" Margin="4" Symbol="Favorite" HorizontalAlignment="Left" PointerPressed="irFavoritos"></SymbolIcon>
+                    <SymbolIcon x:Name="siPerfil" Grid.Row="3" Margin="4" Symbol="OtherUser" HorizontalAlignment="Left" PointerPressed="irPerfil"></SymbolIcon>
+                    <TextBlock x:Name="txtCatalogo" Text="Catalogo" Margin="4" Grid.Row="0" Grid.Column="1" PointerPressed="irCatalogo" ToolTipService.ToolTip="Ir a Catalogo"></TextBlock>
+                    <TextBlock x:Name="txtCesta" Text="Cesta" Margin="4" Grid.Row="1" Grid.Column="1" PointerPressed="irCesta" ToolTipService.ToolTip="Ir a Cesta"></TextBlock>
+                    <TextBlock x:Name="txtFavoritos" Text="Productos favoritos" Margin="4" Grid.Row="2" Grid.Column="1" PointerPressed="irFavoritos" ToolTipService.ToolTip="Ir a Favoritos"></TextBlock>
+                    <TextBlock x:Name="txtPerfil" Text="Mi perfil" Margin="4" Grid.Row="3" Grid.Column="1" PointerPressed="irPerfil" ToolTipService.ToolTip="Ir a mi Perfil"></TextBlock>
+                </Grid>
+            </SplitView.Pane>
+            <Frame x:Name="fmMain">
+                <GridView x:Name="GridProductos">
+                    
+                </GridView>
+            </Frame>
+        </SplitView>
+    </Grid>
+</Page>

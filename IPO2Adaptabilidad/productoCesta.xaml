@@ -1,0 +1,35 @@
+﻿<UserControl
+    x:Class="IPO2_Amazon.productoCesta"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IPO2_Amazon"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Width="655" Height="281">
+    <UserControl.Resources>
+        <Storyboard x:Name="megusta">
+            <ColorAnimation Duration="00:00:00.5000000" Storyboard.TargetName="path" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" To="#FFFD0606"/>
+        </Storyboard>
+        <Storyboard x:Name="nomegusta">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetName="path" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                <EasingColorKeyFrame KeyTime="00:00:00" Value="#FFFD0606"/>
+                <EasingColorKeyFrame KeyTime="00:00:00.5000000" Value="#FFFBF8F8"/>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    <Grid Background="#FFF1E7E7" Margin="0,0,0,0">
+        <RelativePanel x:Name="rpTexto" Margin="0,0,0,0">
+            <TextBlock x:Name="lbNombre" RelativePanel.RightOf="lbT1" RelativePanel.AlignVerticalCenterWith="lbT1" Text="Reloj de muñeca" TextWrapping="Wrap" FontSize="24" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Margin="10,0,0,25"/>
+            <TextBlock x:Name="lbPrecio" RelativePanel.RightOf="lbT2" RelativePanel.AlignVerticalCenterWith="lbT2" Text="15 €" TextWrapping="Wrap" FontSize="24" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Margin="10,85,0,0"/>
+            <TextBlock x:Name="lbT1" RelativePanel.RightOf="img" RelativePanel.AlignVerticalCenterWith="img" Text="Nombre producto:" TextWrapping="Wrap" FontSize="24" FontWeight="Bold" Grid.Column="1" Margin="0,0,0,25"/>
+            <TextBlock x:Name="lbT2" RelativePanel.RightOf="img" RelativePanel.AlignVerticalCenterWith="img" Grid.Column="1" HorizontalAlignment="Left" Margin="0,85,0,0" Text="Precio:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+            <Image x:Name="img" Source="/Assets/reloj.jpg" FocusVisualPrimaryBrush="{x:Null}" Height="164" Width="180" Margin="20,50,0,0"/>
+            <Button x:Name="btEliminar" RelativePanel.RightOf="img" RelativePanel.AlignVerticalCenterWith="img" Content="Eliminar" ToolTipService.ToolTip="Eliminar de la cesta" Height="30" Width="70" Margin="50,185,0,0" Click="btEliminar_Click"/>
+        </RelativePanel>
+        <Path x:Name="path" Stroke="Black" UseLayoutRounding="False" d:LayoutRounding="Auto" Data="M18.620828,0.5 C22.486821,0.50000018 25.620828,5.8725831 25.620828,12.5 C25.620828,19.127417 22.486821,24.5 18.620828,24.5 L18.545739,24.498371 L18.388477,24.531727 C15.666723,25.074429 12.04983,24.493551 8.5337081,22.726816 C2.6118193,19.751261 -0.78172493,14.538725 0.95401478,11.084291 C2.3914242,8.2235863 6.8956881,7.4656717 11.764729,8.9795257 L11.918682,9.0286819 L11.935534,8.9315674 C12.821814,4.0467445 15.479708,0.50000018 18.620828,0.5 z" HorizontalAlignment="Left" Height="32" Margin="8,11,0,0" RenderTransformOrigin="0.712872804286491,0.495491878835364" Stretch="Fill" VerticalAlignment="Top" Width="34" FocusVisualSecondaryBrush="{x:Null}" Fill="#FFFBF8F8" PointerPressed="pulsaCorazon">
+            <Path.RenderTransform>
+                <CompositeTransform Rotation="29.769"/>
+            </Path.RenderTransform>
+        </Path>
+    </Grid>
+</UserControl>

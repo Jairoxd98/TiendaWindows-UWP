@@ -1,0 +1,103 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IPO2_Amazon"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Custom="using:Windows.UI.Xaml.Controls.Maps"
+    x:Class="IPO2_Amazon.perfilPage"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="742" Width="1338">
+
+
+    <Frame x:Name="fmMain">
+        <Grid Background="#FF5EA0CD">
+            <Image x:Name="imPerfil" HorizontalAlignment="Center" Height="196" Margin="30,60,50,0" VerticalAlignment="Top" Width="186" Source="/Assets/user.png"/>
+            <GridView x:Name="gridUser" Margin="0,356,190,236" FontSize="30" RenderTransformOrigin="0.523,0.481" HorizontalAlignment="Center" Width="968" Height="150">
+                <TextBlock x:Name="lbNombre" Margin="45,10,15,5" Text="Nombre:" TextWrapping="Wrap" FontSize="25"/>
+                <TextBox x:Name="tbNombre" Text="Roberto" TextWrapping="Wrap" FontSize="20" Width="140" FontWeight="Normal" Height="40" IsReadOnly="True">
+                    <TextBox.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF108CF3" Offset="0"/>
+                            <GradientStop Color="#FFFBFAFA" Offset="0"/>
+                        </LinearGradientBrush>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBlock x:Name="lbApellidos" Text="Apellidos:" TextWrapping="Wrap" FontSize="25"/>
+                <TextBox x:Name="tbApellidos" Text="Celada  Rojo" TextWrapping="Wrap" FontSize="20" Width="140" Height="40" IsReadOnly="True">
+                    <TextBox.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black"/>
+                            <GradientStop Color="White" Offset="0"/>
+                        </LinearGradientBrush>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBlock x:Name="lbDNI" Text="DNI:" TextWrapping="Wrap" FontSize="25"/>
+                <TextBox x:Name="tbDNI" Text="02075198E" TextWrapping="Wrap" FontSize="20" Width="140" Height="40" IsReadOnly="True">
+                    <TextBox.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black"/>
+                            <GradientStop Color="White" Offset="0"/>
+                        </LinearGradientBrush>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBlock x:Name="lbTelefono" Text="Telefono:" TextWrapping="Wrap" FontSize="25"/>
+                <TextBox x:Name="tbTelefono" Text="658874559" TextWrapping="Wrap" FontSize="20" Width="140" FontWeight="Normal" Height="40" IsReadOnly="True">
+                    <TextBox.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black"/>
+                            <GradientStop Color="White" Offset="0.004"/>
+                        </LinearGradientBrush>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBlock x:Name="lbTarjeta" Text="Tarjeta:" TextWrapping="Wrap" FontSize="25"/>
+                <TextBox x:Name="tbTarjeta" Text="****0013" TextWrapping="Wrap" FontSize="20" Width="140" Height="40" IsReadOnly="True">
+                    <TextBox.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black"/>
+                            <GradientStop Color="White" Offset="0"/>
+                        </LinearGradientBrush>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBlock x:Name="lbDirecion" Text="Direción:" TextWrapping="Wrap" FontSize="25"/>
+                <TextBox x:Name="tbDireccion" Text="C/Rosas 14" TextWrapping="Wrap" FontSize="20" Width="140" Height="40" IsReadOnly="True">
+                    <TextBox.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black"/>
+                            <GradientStop Color="White" Offset="0.018"/>
+                        </LinearGradientBrush>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBlock x:Name="lbLocalidad" Text="Localidad:" TextWrapping="Wrap" FontSize="25"/>
+                <TextBox x:Name="tbLocalidad" Text="Madrid" TextWrapping="Wrap" FontSize="20" Width="140" Height="40" IsReadOnly="True">
+                    <TextBox.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black"/>
+                            <GradientStop Color="White" Offset="0"/>
+                        </LinearGradientBrush>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBlock x:Name="lbPais" Text="País:" TextWrapping="Wrap" FontSize="25"/>
+                <TextBox x:Name="tbPais" Text="España" TextWrapping="Wrap" FontSize="20" Width="140" Height="40" IsReadOnly="True">
+                    <TextBox.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black"/>
+                            <GradientStop Color="White" Offset="0"/>
+                        </LinearGradientBrush>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBlock x:Name="lbVIP" Text="VIP:" TextWrapping="Wrap" FontSize="25"/>
+                <TextBox x:Name="tbVIP" Text="SI" TextWrapping="Wrap" FontSize="20" Width="140" Height="40" IsReadOnly="True">
+                    <TextBox.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black"/>
+                            <GradientStop Color="White" Offset="0"/>
+                        </LinearGradientBrush>
+                    </TextBox.Background>
+                </TextBox>
+
+            </GridView>
+        </Grid>
+    </Frame>
+
+</Page>
